@@ -1,0 +1,21 @@
+__-- Functions --__
+
+Rules
+- takes input
+- returns output
+- can only call other Functions
+- make side effects obvious or avoid if possible
+- same inputs -> same outputs, every time
+
+Side Effects
+- I/O console, files, etc...
+- Database access
+- Network calls
+- Timestamps
+- Random Numbers
+- CPU Heat
+
+Purity
+- level of confidence that the code is functional
+- calls, not definitions matter
+- extract impurity

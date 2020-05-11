@@ -1,0 +1,8 @@
+Dictionay
+Tuple: an array of 2 elements
+Function: the semantic relationship between input and output
+Side Effect: indirect inputs or indirect outputs
+Higher Order Function: recieves one or more functions, returns one or more functions
+Single Order Function: recieved input value and returns output value
+Flip: transposes the first two and only the first two arguments
+Equational Reasoning: Functions with the same shape are interchangable

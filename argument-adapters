@@ -1,0 +1,46 @@
+
+A function has a shape: number of inputs, number of outputs
+
+Unary: 1 input,
+Binary: 2 inputs, 2 outputs
+Ternary: 3 inputs, 3 outputs
+etc..
+
+functions with the same shape fit together, unary -> unary -> unary
+
+sometimes you want to fit two functions with different shapes together e.g.
+binary -> unary
+
+argument adapters are intermediary functions that do this
+
+Higher Order Function
+
+function unary(fn) {
+    return function one(arg) {
+        return fn(arg)
+    }
+}
+
+Adapts any amount of inputs in to a unary function disacarding all other inputs
+
+function gather(...args) {
+    return args
+}
+
+Adapts any amount of inputs in to a unary input as an array
+
+Flip: transposes the first two and only the first two arguments
+
+function flip(fn) {
+    return function flipped(arg1, arg2, ...args) {
+        return fn(arg2, arg1, ...args)
+    }
+}
+
+Reverse: reverses all args
+
+function reverse(fn) {
+    return reversed(...args) {
+        return fn(...args.reverse())
+    }
+}

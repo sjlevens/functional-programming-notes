@@ -1,0 +1,19 @@
+Steps to solve a problem with recursion
+1. Find out what the simplest question of the problem is
+2. Decide when you would stop and what is the answer to that situation
+3. How do you return the rest of the problem to the first point
+
+e.g. count all vowels in a string
+
+1. Is this character a vowel? (Binary 1 or 0)
+2. When there is an empty string (answer is 0)
+3. Remove the current answer and return the rest of the string (is this a vowel + the answer for the rest of the string)
+
+const isVowel = char => 'aeiou'.includes(char) ? 1 : 0
+
+function countVowels(str) {
+    if(str.length == 0) return 0;
+    return isVowel(str[0]) + countVowels( str.slice(1) )
+}
+
+const countVowels = str => str.length ? isVowel(str[0]) + countVowels(str.slice(1)) : 0
