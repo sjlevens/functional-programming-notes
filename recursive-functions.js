@@ -1,5 +1,6 @@
 const isVowel = char => 'aeiou'.includes(char) ? 1 : 0
-const countVowels = str => str.length ? isVowel(str[0]) + countVowels(str.slice(1)) : 0
+
+const countVowels = str => str.length ? isVowel(str[0]) + countVowels(str.slice(1)) : 0 
 
 console.log(countVowels('sam is cool'))
 

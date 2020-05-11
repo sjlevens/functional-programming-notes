@@ -1,0 +1,8 @@
+const identity = v => v
+const isVowel = char => 'aeiou'.includes(char)
+
+function countVowels( str, cont = identity ) {
+    var first = (isVowel(str[0]) ? 1 : 0);
+    if(str.length <= 1) return cont(first);
+    return countVowels(str.slice(1), v => cont(first + v))
+}

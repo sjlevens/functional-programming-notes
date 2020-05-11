@@ -1,0 +1,14 @@
+Call a function that returns the next call
+Stack depth never exceeds 1
+
+function trampoline(fn) {
+    return function trampolined(...args) {
+        var result = fn(...args);
+
+        while (typeof result == "function") {
+            result = result();
+        }
+
+        return result;
+    };
+}

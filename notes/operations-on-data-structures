@@ -1,0 +1,9 @@
+map 
+    - mappers should do one thing ( a common functor ) on a set of values
+    - has a functor and a set of values
+    - returns the same data structure as input set of values
+
+filter
+    - filter IN
+    - return TRUE if you want to keep value return FALSE if you want to discard it
+

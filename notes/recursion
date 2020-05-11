@@ -17,3 +17,19 @@ function countVowels(str) {
 }
 
 const countVowels = str => str.length ? isVowel(str[0]) + countVowels(str.slice(1)) : 0
+
+Stack frames and memory limits limit recursion due to the stack size
+
+Tail calls
+
+Have to "use strict";
+
+- function has to be in a proper tail position
+- has to return its value and do nothing else
+
+function decrement(x) {
+    return sub(x, 1) // tail call
+}
+
+
+

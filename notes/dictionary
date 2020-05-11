@@ -1,0 +1,17 @@
+Dictionay
+Tuple: an array of 2 elements
+Function: the semantic relationship between input and output
+Side Effect: indirect inputs or indirect outputs
+Higher Order Function: recieves one or more functions, returns one or more functions
+Single Order Function: recieved input value and returns output value
+Flip: transposes the first two and only the first two arguments
+Equational Reasoning: Functions with the same shape are interchangable
+Frame: any time a function is executed an area of memory is framed and reserved for that execution
+Stack: a stack of frames of memory
+Proper Tail Calls (PTC): Tail calls get O(1) Memory utilisation
+Tail Call Optimisations: In-engine optimisations for tail calls
+Trampolines: A solution for recursion in current JS without tail calls
+Functor: A value over which values can be mapped
+Map: Transformation over values to a new data structure of the same data structure
+Filter: Inclusion/exclusion based on a predicate over a set of values
+Reduce: Combining a set of values based on a reducing function, usually resolving to a single discrete value
